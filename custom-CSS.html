@@ -1,0 +1,19 @@
+<script>
+  color = prompt("Enter color name or code");
+  size = prompt("Enter size in pixels");
+  borderSize = prompt("Enter border size in pixels");
+  borderColor = prompt("Enter border color name or code");
+
+  document.write(
+    `<div style="
+    background: ${color}; 
+    width: ${size}px; 
+    height: ${size}px;
+    border: ${borderSize}px solid ${borderColor};
+    "></div>`
+  );
+</script>
+<!-- <div style="background: green; width: 100px; height: 100px;">BOX</div> -->
+<!-- HW 3 user -> prompt() -> border width, color -->
+
+<div></div>

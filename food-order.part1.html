@@ -1,0 +1,34 @@
+<script>
+  foodName = "Salad"; //String
+  foodPriceValue = 15.0; // Number
+  foodPriceUnits = "MDL"; // String
+  foodAvailQ = 20;
+  deliveryTax = 2; //String
+  qDeliveryFree = 6;
+  //   alert("We have " + foodName);
+  clientQuantity = parseInt(prompt("MENU\n\n " + foodName + "\n\nHow many?"));
+
+  if (qDeliveryFree >= clientQuantity) {
+    totalCost = foodPriceValue * clientQuantity + deliveryTax;
+    alert(
+      "You've ordered " +
+        clientQuantity +
+        "\nDelivery Tax 2 MDL" +
+        "\n Bill " +
+        totalCost +
+        foodPriceUnits
+    );
+  } else if ((foodAvailQ || qDeliveryFree) >= clientQuantity) {
+    totalCost2 = foodPriceValue * clientQuantity;
+    alert(
+      "You've ordered " +
+        clientQuantity +
+        "\nDelivery Tax Free" +
+        "\n Bill " +
+        totalCost2 +
+        foodPriceUnits
+    );
+  } else {
+    alert("Sorry, we can offer only: " + foodAvailQ);
+  }
+</script>

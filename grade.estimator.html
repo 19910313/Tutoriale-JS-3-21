@@ -1,0 +1,25 @@
+<script>
+  grade = parseInt(prompt("Your grade please"));
+  //   HW 2 : what would result :
+  // parseInt ( 9.9 )   --> 9
+  // parseInt ( 9.1 )   --> 9
+  // parseInt ( 9.5 )   --> 9
+  // parseInt ( 9.59 )  --> 9
+
+  LIMIT1 = 4; // VERY BAD
+  LIMIT2 = 6; // BAD
+  LIMIT3 = 8; //OK
+  LIMIT4 = 9; // GOOD
+  LIMIT5 = 10; // eXCELLENT
+  if (LIMIT2 >= grade) {
+    alert("BAD");
+  } else if (LIMIT3 >= grade) {
+    alert("OK");
+  } else if (LIMIT4 >= grade) {
+    alert("GOOD");
+  } else if (LIMIT5 >= grade) {
+    alert("EXCELLENT");
+  } else {
+    alert("VERY BAD!");
+  }
+</script>
